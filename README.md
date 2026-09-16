@@ -3,6 +3,11 @@
 
 ---
 
+## 🖼️ Platform UI Mockup
+![MasrWork UI Preview](watermarked_img_13305400917681502501.png)
+
+---
+
 ## 📌 1. Executive Summary
 MasrWork addresses a major friction point in the Egyptian labor market: the need for a secure, flexible, and localized contracting environment. By eliminating foreign currency exchange complexities and replacing traditional bureaucracy with **Artificial Intelligence**, the platform offers a seamless ecosystem for companies to hire talent and sell B2B/B2C services safely.
 
@@ -45,4 +50,4 @@ Instead of complex legacy systems or costly infrastructure, MasrWork leverages a
 
 ## 📄 License & Copyright
 © 2026 GreenTech Software Egypt. All rights reserved. 
-This document and the **MasrWork** project concepts are confidential and proprietary.
+This document, the UI previews, and the **MasrWork** project concepts are confidential and proprietary.
