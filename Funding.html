@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasrWork - Investor Pitch & Funding Overview</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        @media print {
+            body { background-color: #ffffff; }
+            .no-print { display: none; }
+            .shadow-custom { box-shadow: none !important; border: 1px solid #e2e8f0; }
+        }
+    </style>
+</head>
+<body class="py-10 px-4 sm:px-8">
+
+    <!-- Top Navigation & Return Button -->
+    <div class="max-w-4xl mx-auto mb-6 flex items-center justify-between no-print">
+        <a href="index.html" class="bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs px-4 py-2 rounded-xl transition shadow flex items-center space-x-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+            <span>Back to Dashboard</span>
+        </a>
+        <button onclick="window.print()" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs transition shadow flex items-center space-x-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Save as PDF / Print</span>
+        </button>
+    </div>
+
+    <!-- Main Pitch Container (A4 Ratio Styled) -->
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden p-8 sm:p-12 space-y-10">
+
+        <!-- Header / Branding Section -->
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-slate-200 pb-8 gap-6">
+            <div class="space-y-2">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-[#0f172a] p-2.5 rounded-xl text-white font-extrabold flex items-center justify-center shadow-md">
+                        <svg class="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-extrabold tracking-tight text-slate-900">MasrWork</h1>
+                        <span class="text-xs font-semibold text-emerald-600 uppercase tracking-widest">Investor Pitch & Funding Overview</span>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-500 max-w-md pt-1">Empowering Egypt's digital economy with AI-driven matching, secure EGP escrow, and immutable milestone workflows.</p>
+            </div>
+
+            <!-- GreenTech Software Partner Logo Box -->
+            <div class="flex items-center space-x-3 bg-slate-50 border border-slate-200 p-3 rounded-xl shadow-sm">
+                <img src="1789020925104.png" alt="GreenTech Software Logo" class="w-12 h-12 rounded-lg object-cover border border-emerald-400">
+                <div>
+                    <span class="block text-[10px] text-slate-400 font-medium uppercase">Technical Partner</span>
+                    <span class="text-xs font-bold text-slate-800">GreenTech Software</span>
+                    <span class="block text-[9px] text-emerald-600">Custom Software & AI Solutions</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Executive Summary -->
+        <section class="space-y-3">
+            <h2 class="text-lg font-bold text-slate-900 border-l-4 border-emerald-500 pl-3">Executive Summary</h2>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <strong>MasrWork</strong> is a next-generation B2B and freelance platform customized specifically for the Egyptian market. Operating strictly in Egyptian Pounds (EGP), the platform solves core pain points in remote contracting: payment disputes, currency complexities, and lack of legal security. By integrating AI talent matching and immutable milestone approvals, MasrWork bridges businesses and elite Egyptian freelancers safely and efficiently.
+            </p>
+        </section>
+
+        <!-- Platform Interface Showcase -->
+        <section class="space-y-3">
+            <div class="flex justify-between items-end">
+                <h2 class="text-lg font-bold text-slate-900 border-l-4 border-emerald-500 pl-3">Platform Interface & Dashboard Preview</h2>
+                <span class="text-[11px] font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full">Live MVP Ready</span>
+            </div>
+            <div class="rounded-xl overflow-hidden border border-slate-200 shadow-md bg-slate-900 p-2">
+                <img src="1789524053885.png" alt="MasrWork Dashboard Interface" class="w-full h-auto rounded-lg object-cover">
+                <p class="text-[11px] text-slate-400 text-center py-2">Figure 1.1: MasrWork User Dashboard showcasing Active Contracts, AI Talent Matching, and Escrow Balance in EGP.</p>
+            </div>
+        </section>
+
+        <!-- Core Solutions & Pillars -->
+        <section class="space-y-4">
+            <h2 class="text-lg font-bold text-slate-900 border-l-4 border-emerald-500 pl-3">Key Strategic Pillars</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                    <div class="w-8 h-8 bg-emerald-500 text-slate-950 font-bold rounded-lg flex items-center justify-center text-xs">01</div>
+                    <h3 class="font-bold text-xs text-slate-900">Immutable Milestones</h3>
+                    <p class="text-[11px] text-slate-600 leading-relaxed">Once a client approves a milestone, it becomes 100% final and non-refundable, completely shielding freelancers from retro-active claim fraud.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                    <div class="w-8 h-8 bg-emerald-500 text-slate-950 font-bold rounded-lg flex items-center justify-center text-xs">02</div>
+                    <h3 class="font-bold text-xs text-slate-900">EGP Escrow Security</h3>
+                    <p class="text-[11px] text-slate-600 leading-relaxed">Transactions are locked via certified local gateways (Paymob/Fawry) under Central Bank of Egypt regulations, eliminating FX friction.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                    <div class="w-8 h-8 bg-emerald-500 text-slate-950 font-bold rounded-lg flex items-center justify-center text-xs">03</div>
+                    <h3 class="font-bold text-xs text-slate-900">AI-Powered Matching</h3>
+                    <p class="text-[11px] text-slate-600 leading-relaxed">Smart algorithms connect companies instantly with pre-vetted senior Egyptian developers, designers, and marketers with high match accuracy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market & Business Model -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                <h3 class="font-bold text-sm text-slate-900">Market Opportunity</h3>
+                <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                    <li>Booming tech startup ecosystem in Egypt & MENA.</li>
+                    <li>Rapid transition of corporations toward the gig economy.</li>
+                    <li>High demand for localized, trusted contracting frameworks.</li>
+                </ul>
+            </div>
+            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                <h3 class="font-bold text-sm text-slate-900">Monetization & Business Model</h3>
+                <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                    <li><strong>Dynamic Commission:</strong> 8% to 12% fee on completed milestones.</li>
+                    <li><strong>B2B SaaS Subscriptions:</strong> Monthly tiers for corporate team management.</li>
+                    <li><strong>AI Premium Services:</strong> Automated smart contract generation and dispute analytics.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Legal Compliance & Fraud Protection -->
+        <section class="space-y-3">
+            <h2 class="text-lg font-bold text-slate-900 border-l-4 border-emerald-500 pl-3">Legal & Data Protection Framework</h2>
+            <p class="text-xs text-slate-600 leading-relaxed">
+                In strict compliance with <strong>Egyptian Law No. 151/2020 on Data Protection</strong>, MasrWork maintains rigid privacy measures. Identity forgery, fake profiles, or financial fraud are treated as criminal offenses; all digital logs and IP records are coordinated with Egyptian Cybercrime authorities when necessary to guarantee absolute platform integrity.
+            </p>
+        </section>
+
+        <!-- Footer / Contact Info -->
+        <div class="border-t border-slate-200 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+            <div>
+                <p class="font-semibold text-slate-900">MasrWork Investment Proposal © 2026</p>
+                <p class="text-[11px]">Powered in collaboration with GreenTech Software Egypt</p>
+            </div>
+            <div class="mt-3 sm:mt-0 flex items-center space-x-4">
+                <span>📧 contact@masrwork.eg</span>
+                <span>🌐 www.masrwork.eg</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
 
