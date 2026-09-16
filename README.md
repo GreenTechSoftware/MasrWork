@@ -1,4 +1,4 @@
-# 🚀 MasrWork
+# 🚀 MasrWork 🇪🇬
 > An AI-powered tri-party ecosystem connecting companies, freelancers, and clients for full-time, part-time, and project-based contracting in Egypt, operating entirely in Egyptian Pounds (EGP).
 
 🌐 **Live Website / Prototype:** [https://greentechsoftware.github.io/MasrWork/](https://greentechsoftware.github.io/MasrWork/)
@@ -6,7 +6,7 @@
 ---
 
 ## 🖼️ Platform UI Mockup
-![MasrWork UI Preview](watermarked_img_13305400917681502501.png)
+![MasrWork UI Preview](1789524053885.png)
 
 ---
 
