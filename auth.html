@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasrWork - Membership, Wallet & KYC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 flex flex-col min-h-screen">
+
+    <header class="bg-[#0f172a] text-white px-6 py-4 flex items-center justify-between shadow-md">
+        <span class="text-xl font-bold">MasrWork Portal</span>
+        <a href="index.html" class="text-xs text-slate-300 hover:text-white">Back to Home</a>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-6 py-10 flex-grow w-full">
+        
+        <!-- Registration Form Section -->
+        <div id="registerSection" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6">
+            <div>
+                <h1 class="text-2xl font-bold text-slate-900">Create Account & Join MasrWork</h1>
+                <p class="text-xs text-slate-500 mt-1">Sign up to get your Membership ID, Digital EGP Wallet, and apply for jobs.</p>
+            </div>
+
+            <form id="signupForm" class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name</label>
+                        <input type="text" id="regName" required class="w-full bg-slate-50 border border-slate-200 px-3 py-2 rounded-xl text-xs" placeholder="e.g. Mahmoud Ali">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+                        <input type="email" id="regEmail" required class="w-full bg-slate-50 border border-slate-200 px-3 py-2 rounded-xl text-xs" placeholder="name@example.com">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Country</label>
+                        <input type="text" id="regCountry" value="Egypt" required class="w-full bg-slate-50 border border-slate-200 px-3 py-2 rounded-xl text-xs">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Role / Job Target</label>
+                        <select id="regRole" class="w-full bg-slate-50 border border-slate-200 px-3 py-2 rounded-xl text-xs">
+                            <option value="Backend Laravel Junior">Backend Laravel Junior Developer</option>
+                            <option value="UI/UX Sketch Designer">UI/UX Sketch Designer</option>
+                            <option value="Digital Marketer">Digital Marketer</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Skills & Qualifications (Comma separated)</label>
+                    <input type="text" id="regSkills" required class="w-full bg-slate-50 border border-slate-200 px-3 py-2 rounded-xl text-xs" placeholder="e.g. PHP, Laravel, MySQL, Git">
+                </div>
+
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-3 rounded-xl transition shadow">
+                    Complete Registration & Open Digital Wallet
+                </button>
+            </form>
+        </div>
+
+        <!-- Dashboard / Wallet & KYC Section (Initially Hidden) -->
+        <div id="dashboardSection" class="hidden space-y-6">
+            <!-- User Profile & Membership Card -->
+            <div class="bg-gradient-to-r from-[#0f172a] to-slate-900 text-white p-6 rounded-2xl shadow-md space-y-4">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <span class="bg-emerald-500 text-slate-950 text-[10px] font-extrabold px-2.5 py-1 rounded-lg uppercase">Verified Member</span>
+                        <h2 id="dispName" class="text-xl font-bold mt-2"></h2>
+                        <p id="dispRole" class="text-xs text-slate-300"></p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-[10px] text-slate-400 block">Membership ID</span>
+                        <span id="dispMemberID" class="text-sm font-mono font-bold text-emerald-400"></span>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-700 pt-4 flex justify-between items-center">
+                    <div>
+                        <span class="text-[10px] text-slate-400 block">Digital EGP Wallet Balance</span>
+                        <span class="text-xl font-bold text-emerald-400">0.00 EGP</span>
+                    </div>
+                    <span id="kycStatusBadge" class="bg-amber-500/20 text-amber-300 text-[11px] px-3 py-1 rounded-full font-semibold">KYC: Pending Verification</span>
+                </div>
+            </div>
+
+            <!-- KYC Verification Box -->
+            <div id="kycBox" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+                <h3 class="font-bold text-sm text-slate-900">Identity Verification (KYC)</h3>
+                <p class="text-xs text-slate-500">To comply with financial regulations and withdraw funds, please submit your National ID / Passport photo.</p>
+                
+                <form id="kycForm" class="space-y-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">National ID Number (14 Digits)</label>
+                        <input type="text" id="nationalId" maxlength="14" required class="w-full bg-slate-50 border border-slate-200 px-3 py-2 rounded-xl text-xs" placeholder="295... ">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Upload ID Document (Image / PDF)</label>
+                        <input type="file" required class="w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-emerald-50 file:text-emerald-700 hover:file:bg-emerald-100">
+                    </div>
+                    <button type="submit" class="bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs px-4 py-2 rounded-xl">
+                        Submit KYC for Approval
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-slate-900 text-white py-6 text-center text-xs text-slate-400 mt-12">
+        <p>© 2026 MasrWork. Powered by GreenTech Software.</p>
+    </footer>
+
+    <script>
+        // Check if user is already registered in LocalStorage
+        const currentUser = JSON.parse(localStorage.getItem('masrwork_current_user'));
+        if (currentUser) {
+            showDashboard(currentUser);
+        }
+
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Generate Unique Membership ID (e.g. MSW-849201)
+            const randomId = 'MSW-' + Math.floor(100000 + Math.random() * 900000);
+            
+            const userData = {
+                name: document.getElementById('regName').value,
+                email: document.getElementById('regEmail').value,
+                country: document.getElementById('regCountry').value,
+                role: document.getElementById('regRole').value,
+                skills: document.getElementById('regSkills').value,
+                memberId: randomId,
+                kycVerified: false
+            };
+
+            localStorage.setItem('masrwork_current_user', JSON.stringify(userData));
+            showDashboard(userData);
+        });
+
+        function showDashboard(user) {
+            document.getElementById('registerSection').classList.add('hidden');
+            document.getElementById('dashboardSection').classList.remove('hidden');
+            
+            document.getElementById('dispName').textContent = user.name;
+            document.getElementById('dispRole').textContent = `${user.role} | ${user.country}`;
+            document.getElementById('dispMemberID').textContent = user.memberId;
+        }
+
+        document.getElementById('kycForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('KYC documents submitted successfully! Your account will be verified within 24 hours.');
+            document.getElementById('kycStatusBadge').className = 'bg-emerald-500/20 text-emerald-300 text-[11px] px-3 py-1 rounded-full font-semibold';
+            document.getElementById('kycStatusBadge').textContent = 'KYC: Verified & Approved';
+            document.getElementById('kycBox').classList.add('opacity-75');
+        });
+    </script>
+</body>
+</html>
