@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasrWork - Investor Pitch Deck</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .slide-container {
+            width: 100%;
+            max-width: 900px;
+            min-height: 520px;
+            margin: 0 auto 40px auto;
+            background: #ffffff;
+            color: #1e293b;
+            border-radius: 1.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 48px;
+            page-break-after: always;
+            position: relative;
+        }
+        @media print {
+            body { background-color: #ffffff; }
+            .no-print { display: none; }
+            .slide-container { box-shadow: none; border: 1px solid #e2e8f0; margin: 0; width: 100%; height: 100vh; page-break-after: always; }
+        }
+    </style>
+</head>
+<body class="py-10 px-4">
+
+    <!-- Print / Export Floating Bar (Hidden on Print) -->
+    <div class="max-w-4xl mx-auto mb-8 bg-slate-800 border border-slate-700 text-white p-4 rounded-xl shadow-lg flex items-center justify-between no-print">
+        <div>
+            <h4 class="font-bold text-sm text-emerald-400">🚀 MasrWork Investor Pitch Deck (PDF Ready)</h4>
+            <p class="text-xs text-slate-300">Press Ctrl+P or Cmd+P and choose "Save as PDF" with background graphics enabled.</p>
+        </div>
+        <button onclick="window.print()" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-4 py-2 rounded-lg text-xs transition shadow">
+            Download / Print PDF
+        </button>
+    </div>
+
+    <!-- ================= SLIDE 1: Title Slide ================= -->
+    <div class="slide-container">
+        <div class="flex justify-between items-start">
+            <div class="flex items-center space-x-3">
+                <div class="bg-slate-900 p-2.5 rounded-xl text-white font-extrabold flex items-center justify-center">
+                    <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-slate-900">MasrWork</span>
+            </div>
+            <!-- GreenTech Software Logo -->
+            <div class="flex items-center space-x-2 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl">
+                <img src="1789020925104.png" alt="GreenTech Logo" class="w-8 h-8 rounded-lg object-cover border border-emerald-400">
+                <div class="text-left">
+                    <span class="block text-[9px] text-slate-400 uppercase font-semibold">Technical Partner</span>
+                    <span class="text-[11px] font-bold text-slate-800">GreenTech Software</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-auto space-y-4 py-8">
+            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Series A / Seed Investment Deck</span>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">Smart Contracting & <br>Freelance Platform for Egypt</h1>
+            <p class="text-sm sm:text-base text-slate-600 max-w-2xl leading-relaxed">
+                Empowering Egypt's digital economy with AI-driven talent matching, secure local EGP escrow, and immutable milestone workflows.
+            </p>
+        </div>
+
+        <div class="border-t border-slate-100 pt-4 flex justify-between items-center text-xs text-slate-400">
+            <span>Confidential Investor Document © 2026</span>
+            <span>www.masrwork.eg</span>
+        </div>
+    </div>
+
+    <!-- ================= SLIDE 2: The Problem ================= -->
+    <div class="slide-container">
+        <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+            <h2 class="text-xl font-bold text-slate-900">01 / The Problem</h2>
+            <span class="text-xs text-slate-400 font-semibold uppercase">Market Pain Points</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-auto py-6">
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3">
+                <div class="w-10 h-10 bg-red-100 text-red-600 rounded-xl flex items-center justify-center font-bold">⚠️</div>
+                <h3 class="font-bold text-sm text-slate-900">Contractual Disputes</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">Emerging markets lack rigid legal mechanisms, exposing freelancers to retro-active claim fraud and unjustified client chargebacks.</p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3">
+                <div class="w-10 h-10 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center font-bold">💱</div>
+                <h3 class="font-bold text-sm text-slate-900">FX & Currency Friction</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">Global platforms impose heavy foreign exchange fees, complex transfer delays, and banking barriers for local transactions inside Egypt.</p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3">
+                <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold">🛡️</div>
+                <h3 class="font-bold text-sm text-slate-900">Identity Fraud Risks</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">Rampant fake accounts and insecure agreements degrade corporate trust and compromise secure remote project execution.</p>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-100 pt-4 text-xs text-slate-400 text-right">
+            MasrWork Pitch Deck
+        </div>
+    </div>
+
+    <!-- ================= SLIDE 3: The Solution & Product UI ================= -->
+    <div class="slide-container">
+        <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+            <h2 class="text-xl font-bold text-slate-900">02 / The Solution & Product</h2>
+            <span class="text-xs text-emerald-600 font-bold bg-emerald-50 px-3 py-1 rounded-full">Live MVP Ready</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-auto py-4 items-center">
+            <div class="space-y-4">
+                <div class="space-y-1">
+                    <h3 class="font-bold text-sm text-slate-900">🔒 No-Rollback Milestone Rule</h3>
+                    <p class="text-xs text-slate-600">Once approved by the client, milestones become 100% immutable and non-refundable, securing freelancer revenues.</p>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="font-bold text-sm text-slate-900">💳 Local EGP Escrow Security</h3>
+                    <p class="text-xs text-slate-600">Seamless local integration via Paymob and Fawry under Central Bank of Egypt regulations.</p>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="font-bold text-sm text-slate-900">🤖 AI-Powered Talent Matching</h3>
+                    <p class="text-xs text-slate-600">Smart matching engines pairing corporations with pre-vetted senior professionals instantly.</p>
+                </div>
+            </div>
+            <div class="bg-slate-900 p-2 rounded-xl shadow-lg border border-slate-700">
+                <img src="1789524053885.png" alt="MasrWork Dashboard" class="w-full h-auto rounded-lg object-cover">
+            </div>
+        </div>
+
+        <div class="border-t border-slate-100 pt-4 text-xs text-slate-400 text-right">
+            MasrWork Pitch Deck
+        </div>
+    </div>
+
+    <!-- ================= SLIDE 4: Market & Business Model ================= -->
+    <div class="slide-container">
+        <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+            <h2 class="text-xl font-bold text-slate-900">03 / Market Opportunity & Business Model</h2>
+            <span class="text-xs text-slate-400 font-semibold uppercase">Growth & Monetization</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-auto py-6">
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3">
+                <h3 class="font-bold text-sm text-slate-900 text-emerald-600">Market Opportunity</h3>
+                <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                    <li>Explosive growth in Egypt's tech startup and SME sectors.</li>
+                    <li>Massive migration toward the gig economy and remote engineering teams.</li>
+                    <li>High appetite for localized financial solutions insulated from foreign currency shocks.</li>
+                </ul>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3">
+                <h3 class="font-bold text-sm text-slate-900 text-emerald-600">Monetization Engine</h3>
+                <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                    <li><strong>Dynamic Commission:</strong> 8% to 12% cut on completed milestones.</li>
+                    <li><strong>B2B SaaS Subscriptions:</strong> Tiered corporate plans for distributed team management.</li>
+                    <li><strong>AI Premium Tools:</strong> Automated smart contract generation and dispute analytics.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-100 pt-4 text-xs text-slate-400 text-right">
+            MasrWork Pitch Deck
+        </div>
+    </div>
+
+    <!-- ================= SLIDE 5: Legal & Funding Ask ================= -->
+    <div class="slide-container">
+        <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+            <h2 class="text-xl font-bold text-slate-900">04 / Compliance, Security & The Ask</h2>
+            <span class="text-xs text-slate-400 font-semibold uppercase">Investment & Vision</span>
+        </div>
+
+        <div class="my-auto space-y-6 py-4">
+            <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
+                <h3 class="font-bold text-sm text-slate-900">Legal Compliance (Law No. 151 / 2020)</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                    Full adherence to Egyptian data privacy regulations. Fraudulent activities and identity misuses are handled via direct coordination with Egyptian Cybercrime authorities, ensuring absolute platform immunity.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-emerald-50 border border-emerald-200 p-5 rounded-2xl space-y-2">
+                    <span class="text-[10px] font-bold text-emerald-700 uppercase">Funding Round</span>
+                    <h4 class="font-extrabold text-lg text-slate-900">Seed Investment Allocation</h4>
+                    <p class="text-xs text-slate-600">Capital dedicated to engineering scaling, AI matching upgrades, and aggressive local marketing campaigns across Egypt.</p>
+                </div>
+                <div class="bg-slate-900 text-white p-5 rounded-2xl space-y-2">
+                    <span class="text-[10px] font-bold text-emerald-400 uppercase">Contact & Partnerships</span>
+                    <h4 class="font-extrabold text-lg">Let’s Build the Future Together</h4>
+                    <p class="text-xs text-slate-300">📧 contact@masrwork.eg | 🌐 www.masrwork.eg</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-100 pt-4 text-xs text-slate-400 text-right">
+            MasrWork Pitch Deck - Powered by GreenTech Software
+        </div>
+    </div>
+
+</body>
+</html>
