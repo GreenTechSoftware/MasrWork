@@ -1,10 +1,19 @@
 # 🚀 MasrWork
 > An AI-powered tri-party ecosystem connecting companies, freelancers, and clients for full-time, part-time, and project-based contracting in Egypt, operating entirely in Egyptian Pounds (EGP).
 
+🌐 **Live Website / Prototype:** [https://greentechsoftware.github.io/MasrWork/](https://greentechsoftware.github.io/MasrWork/)
+
 ---
 
 ## 🖼️ Platform UI Mockup
-![MasrWork UI Preview](1789524053885.png)
+![MasrWork UI Preview](watermarked_img_13305400917681502501.png)
+
+---
+
+## 🏢 About the Founding Company
+**MasrWork** is developed, owned, and powered by **GreenTech Software Egypt**. 
+* **LinkedIn Profile:** [GreenTech Software Egypt](https://www.linkedin.com/company/greentechsoftware/)
+* **Mission:** Delivering sustainable, cutting-edge software solutions and empowering the digital workforce economy in Egypt and the region through intelligent automation and artificial intelligence.
 
 ---
 
@@ -36,9 +45,11 @@ Instead of complex legacy systems or costly infrastructure, MasrWork leverages a
 
 ---
 
-## 🔒 5. Security & Escrow System
-* **Local Centralized Escrow:** Integration with certified Egyptian payment gateways (e.g., Paymob, Fawry) to securely hold project funds in EGP.
-* **Milestone Releases:** Funds remain locked in escrow until the deliverables are successfully verified and approved by the client, protecting all parties involved.
+## 🛡️ 5. Immutable Milestone & Escrow Protection System
+MasrWork introduces an innovative operational model designed to completely eliminate disputes, refund scams, and workflow friction:
+* **Task-to-Milestone Breakdown:** Projects are systematically mapped into allocated hours and sequential milestones upon agreement between companies and freelancers.
+* **The "No-Rollback" Rule:** Once a client reviews and explicitly approves a specific milestone, it becomes final and non-refundable. Clients cannot roll back past completed phases, completely protecting the freelancer's earned effort against post-approval disputes.
+* **Incremental Payouts:** Funds for verified and approved milestones are immediately released to the freelancer's EGP balance (via Paymob/Fawry), ensuring continuous cash flow and absolute operational transparency. Un-commenced or pending milestones remain protected in escrow for safe refunds if necessary.
 
 ---
 
@@ -50,4 +61,4 @@ Instead of complex legacy systems or costly infrastructure, MasrWork leverages a
 
 ## 📄 License & Copyright
 © 2026 GreenTech Software Egypt. All rights reserved. 
-This document, the UI previews, and the **MasrWork** project concepts are confidential and proprietary.
+This document, the live web prototype, the UI previews, and the **MasrWork** project concepts are confidential and proprietary.
