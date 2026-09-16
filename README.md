@@ -4,7 +4,7 @@
 ---
 
 ## 🖼️ Platform UI Mockup
-![MasrWork UI Preview](watermarked_img_13305400917681502501.png)
+![MasrWork UI Preview](1789524053885.png)
 
 ---
 
